@@ -1,0 +1,72 @@
+{
+  "name": "@quincarter/app-shell-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "yarn build && vite preview",
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@lit/context": "^1.1.2",
+    "@lit/task": "^1.0.1",
+    "@vaadin/router": "^1.7.5",
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.3",
+    "@open-wc/eslint-config": "^12.0.3",
+    "@open-wc/testing": "^4.0.0",
+    "@types/gh-pages": "^6.1.0",
+    "@types/mocha": "^10.0.8",
+    "@types/sinon": "^17.0.3",
+    "@types/uglify-js": "^3.17.5",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "@vitest/coverage-v8": "^2.1.1",
+    "@web/test-runner": "^0.19.0",
+    "concurrently": "^9.0.1",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-html": "^8.1.1",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-lit": "^1.15.0",
+    "eslint-plugin-lit-a11y": "^4.1.4",
+    "eslint-plugin-no-only-tests": "^3.3.0",
+    "eslint-plugin-wc": "^2.1.1",
+    "gh-pages": "^6.1.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "sinon": "^19.0.2",
+    "terser": "^5.32.0",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.2",
+    "uglify-js": "^3.19.3",
+    "vite": "^5.4.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^0.20.5",
+    "vite-svg-loader": "^5.1.0",
+    "vitest": "^2.1.1"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.css": [
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "customElements": "dist/custom-elements.json",
+  "packageManager": "yarn@4.1.1"
+}
